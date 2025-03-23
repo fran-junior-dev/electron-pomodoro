@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  </head>
+  <body>
+    <div class="title-bar">
+      <div class="title">Pomodoro Timer</div>
+      <div class="window-controls">
+        <button id="minimize-btn"><i class="fas fa-window-minimize"></i></button>
+        <button id="maximize-btn"><i class="fas fa-window-maximize"></i></button>
+        <button id="close-btn"><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+    <div class="container">
+      <div id="status">Focus Time</div>
+      <div id="pet">
+        <img id="pet-image" src="assets/cat-active.gif" alt="Pet" />
+      </div>
+      <div id="timer">25:00</div>
+      <div class="buttons">
+        <button id="play-pause-btn"><i class="fas fa-play"></i></button>
+        <button id="stop-btn" class="hidden"><i class="fas fa-stop"></i></button>
+      </div>
+      <div class="switch-container">
+        <label class="switch">
+          <input type="checkbox" id="pet-switch" />
+          <span class="slider">
+            <i class="fas fa-cat"></i>
+            <i class="fas fa-dog"></i>
+          </span>
+        </label>
+      </div>
+    </div>
+    <script src="renderer.js"></script>
+  </body>
+</html>
